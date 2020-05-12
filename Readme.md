@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Pavel Drow](https://up.htmlacademy.ru/htmlcss/28/user/1307323).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Вашкевич] (https://htmlacademy.ru/profile/id116959).
 
 ---
 
