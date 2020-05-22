@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy: Глейси. Каталог сливочного мороженого</title>
   </head>
   <body>
     <header>
@@ -26,8 +26,8 @@
       <ul>
         <li><a href="#">Поиск по каталогу</a>
             <section>
-              <h2> Поиск</h2>
-              <form action="https://echo.htmlacademy.ru" method="post">
+              <h2 class="visually-hidden">Поиск</h2>
+              <form action="https://echo.htmlacademy.ru" method="get">
                 <label for="search-field">Поиск</label>
                 <input id="search-field" type="search" name="search" placeholder="Что ищем?">
               </form>
@@ -35,7 +35,7 @@
         </li>
         <li><a href="#">Вход</a>
             <section>
-              <h2>Авторизация</h2>
+              <h2 class="visually-hidden">Авторизация</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label for="email-login-field">Электронная почта</label>
@@ -56,7 +56,7 @@
           <li>
             <a href="#">Корзина</a>
           <section>        
-            <h2>Корзина</h2>
+            <h2 class="visually-hidden">Корзина</h2>
             <table>
               <tr>
                 <td><a href="3">Удалить</a></td>
@@ -95,9 +95,76 @@
             <li><a href="#">Каталог</a></li>
             <li><a>Сливочное</a></li>
         </ul>
-        <!--Здесь будет форма фильтра-->
-        
-        <ul>
+        <section>
+          <h2 class="visually-hidden">Фильтр мороженного</h2>
+          <form action="https://echo.htmlacademy.ru" method="get" oninput="maxpriceoutput.value=maxprice.value">
+            <p>
+              <label for="sorting-filter-field">Сортировка:</label>
+              <select id="sorting-filter-field" name="sorting">
+                <option value="filter-popular" selected>по популярности</option>
+                <option value="filter-low-price">сначала недорогие</option>
+                <option value="filter-hight-price">сначала дорогие</option>
+                <option value="filter-fat">по жирности</option>
+              </select>
+            </p>
+            <p>
+              <label for="price-field">Цена:</label>
+              <output name="minpriceoutput">100</output>
+              <output name="maxpriceoutput">500</output><br>
+              <input name="minprice" type="range" min="5" max="400" step="10">
+              <input id="price-field" name="maxprice" type="range" min="500" max="1000" step="100">
+            </p>
+            <p>
+            Жирность:
+              <ul>
+                <li>
+                  <input type="radio" id="filter-fat-level-0%" name="fat-level" value="0%">
+                  <label for="filter-fat-level-0%">0%</label>
+                </li>
+                <li>
+                  <input type="radio" id="filter-fat-level-10%" name="fat-level" value="10%" checked>
+                  <label for="filter-fat-level-10%">от 10%</label>
+                </li>
+                <li>
+                  <input type="radio" id="filter-fat-level-30%" name="fat-level" value="30%">
+                  <label for="filter-fat-level-30%">от 30%</label>
+                </li>
+                <li>
+                  <input type="radio" id="filter-fat-level-extra-30%" name="fat-level" value="extra-30%">
+                  <label for="filter-fat-level-extra-30%">от 30%</label>
+                </li>
+              </ul>
+            </p>
+            <p>
+              Наполнители:
+              <ul>
+                <li>
+                  <input type="checkbox" id="filter-topping-chocolate" name="topping-chocolate">
+                  <label for="filter-topping-chocolate">шоколадные</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-topping-sugar" name="topping-sugar">
+                  <label for="filter-topping-sugar">сахарные присыпки</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-topping-fruits" name="topping-fruits">
+                  <label for="filter-topping-fruits">фрукты</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="filter-topping-syrups" name="topping-syrups">
+                  <label for="filter-topping-syrups" name="topping-">сиропы</label>
+                </li>
+                <li><input type="checkbox" id="filter-topping-jams" name="topping-jams">
+                  <label for="filter-topping-jams">джемы</label>
+                </li>
+              </ul>
+            </p>
+            <button type="sumbit">Применить</button>
+            </form>
+        </section>
+        <section>
+          <h2 class="visually-hidden">Список сливочного мороженого</h2>
+          <ul>
             <li>
                 <a href="#">
                     <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -207,7 +274,7 @@
     </main>
     <footer>
         <section>
-          <h2>Наши социальные сети</h2>
+          <h2 class="visually-hidden">Наши социальные сети</h2>
           <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Vkontakte</a></li>
@@ -216,7 +283,7 @@
           </ul>
         </section>
         <section>
-          <h2>О компании</h2>
+          <h2 class="visually-hidden">О компании</h2>
           <ul>
             <li><a href="#">Для поставщиков</a></li>
             <li><a href="#">Наши документы</a></li>
