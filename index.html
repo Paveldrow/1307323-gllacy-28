@@ -28,8 +28,8 @@
             <section>
               <h2> Поиск</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="search" name="search" placeholder="Что ищем?">
-                <button type="submit">Искать</button>
+                <label for="search-field">Поиск</label>
+                <input id="search-field" type="search" name="search" placeholder="Что ищем?">
               </form>
             </section>
         </li>
@@ -37,15 +37,17 @@
             <section>
               <h2>Авторизация</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <div>
-                  <input type="email" name="email" id="email-field" placeholder="Электронаая почта">
-                </div>
-                <div>
-                  <input type="password" name="password" id="password-field" placeholder="Пароль">
-              </div>
-              <div>
+                <p>
+                  <label for="email-login-field">Электронная почта</label>
+                  <input id="email-login-field" type="email" name="email" id="email-field" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label for="password-field">Пароль</label>
+                  <input id="password-field" type="password" name="password" placeholder="Пароль">
+              </p>
+              <p>
                 <button type="submit">Войти</button>
-              </div>
+              </p>
               </form>
               <p><a href="#">Забыли пароль?</a></p>
               <p><a href="#">Новая регистрация</a></p>
@@ -191,18 +193,21 @@
           <section>
             <h3>Форма обратной вязи</h3>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <div>
-                  <input type="text" name="name" placeholder="Как вас зовут?">
-                </div>
-                <div>
-                  <input type="email" name="email" placeholder="Ваша почта для ответа?">
-              </div>
-              <div>
-                <textarea name="messege" rows="5" cols="20">Напишите что-нибудь...</textarea>
-              </div>
-              <div>
+                <p>
+                  <label for="name-feedback">Как вас зовут?</label>
+                  <input id="name-feedback" type="text" name="name" placeholder="Как вас зовут?">
+                </p>
+                <p>
+                  <label for="email-feedback">Ваша почта для ответа</label>
+                  <input id="email-feedback" type="email" name="email" placeholder="Ваша почта для ответа?">
+              </p>
+              <p>
+                <label for="message-feedback">Ваше сообщение</label>
+                <textarea id="message-feedback" placeholder="Напишите что-нибудь..." name="message" rows="5" cols="20"></textarea>
+              </p>
+              <p>
                 <button type="submit">Отправить</button>
-              </div>
+              </p>
               </form>
            <button type="button">Закрыть</button>
             
