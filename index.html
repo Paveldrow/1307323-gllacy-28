@@ -27,23 +27,36 @@
         <li><a href="#">Поиск по каталогу</a>
             <section>
               <h2> Поиск</h2>
-              <!--Форма поиска-->
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="search" name="search" placeholder="Что ищем?">
+                <button type="submit">Искать</button>
+              </form>
             </section>
         </li>
         <li><a href="#">Вход</a>
             <section>
               <h2>Авторизация</h2>
-              <!--Здесь будет форма авторизации-->
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div>
+                  <input type="email" name="email" id="email-field" placeholder="Электронаая почта">
+                </div>
+                <div>
+                  <input type="password" name="password" id="password-field" placeholder="Пароль">
+              </div>
+              <div>
+                <button type="submit">Войти</button>
+              </div>
+              </form>
               <p><a href="#">Забыли пароль?</a></p>
-              <p><a href="#">Новая регистрация</a></p> 
+              <p><a href="#">Новая регистрация</a></p>
             </section>
-      </li>
-        <li>
-          <a href="#">Корзина</a>
-          <section>        
-            <h2>Корзина</h2>
-            <!--Форма оформления заказа в корзине-->    
-          </section>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+            <section>        
+              <h2>Корзина</h2>
+              <!--Форма оформления заказа в корзине-->    
+            </section>
         </li>
        </ul>
       <div>
@@ -155,7 +168,10 @@
       <section>
         <h2>Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Здесь будет форма подписки на рассылку-->
+        <form action="https://echo.htmlacademy.ru" method="post">    
+          <input type="email" name="email">         
+          <button type="submit">Отправить</button>
+        </form>
       </section>
       <section>
         <h2>Карта</h2>
@@ -172,6 +188,25 @@
             (С 10 до 20 ужедневно)
           </p>
           <a href="#">Форма обратной связи</a>
+          <section>
+            <h3>Форма обратной вязи</h3>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div>
+                  <input type="text" name="name" placeholder="Как вас зовут?">
+                </div>
+                <div>
+                  <input type="email" name="email" placeholder="Ваша почта для ответа?">
+              </div>
+              <div>
+                <textarea name="messege" rows="5" cols="20">Напишите что-нибудь...</textarea>
+              </div>
+              <div>
+                <button type="submit">Отправить</button>
+              </div>
+              </form>
+           <button type="button">Закрыть</button>
+            
+          </section>
         </div>
       </section>
     </main>
@@ -201,13 +236,6 @@
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
   </footer>
-   
-  <section>
-    <h2>Мы обязательно вам ответим!</h2>
-    <!--Форма обратной связи-->
-    <button type="button">Закрыть</button>
-  </section>
-
 </body>
 </html>
 

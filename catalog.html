@@ -27,22 +27,57 @@
         <li><a href="#">Поиск по каталогу</a>
             <section>
               <h2> Поиск</h2>
-              <!--Форма поиска-->
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <input type="search" name="search" placeholder="Что ищем?">
+                <button type="submit">Искать</button>
+              </form>
             </section>
         </li>
         <li><a href="#">Вход</a>
             <section>
               <h2>Авторизация</h2>
-              <!--Здесь будет форма авторизации-->
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div>
+                  <input type="email" name="email" id="email-field" placeholder="Электронаая почта">
+                </div>
+                <div>
+                  <input type="password" name="password" id="password-field" placeholder="Пароль">
+              </div>
+              <div>
+                <button type="submit">Войти</button>
+              </div>
+              </form>
               <p><a href="#">Забыли пароль?</a></p>
-              <p><a href="#">Новая регистрация</a></p> 
+              <p><a href="#">Новая регистрация</a></p>
             </section>
-      </li>
-        <li>
-          <a href="#">Корзина</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
           <section>        
             <h2>Корзина</h2>
-            <!--Форма оформления заказа в корзине-->    
+            <table>
+              <tr>
+                <td><a href="3">Удалить</a></td>
+                <td><a href="#"><img src="img/icecream-1-small.jpg" width="33" height="33" alt=""></a></td>
+                <td><a href="#">Пломбир с апельсиновым джемом</a></td>
+                <td>1,5 кг х</td>
+                <td>200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td><a href="3">Удалить</a></td>
+                <td><img src="img/icecream-3-small.jpg" width="33" height="33" alt=""></td>
+                <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                <td>1,5 кг х</td>
+                <td>200 руб.</td>
+                <td>300 руб.</td>
+              </tr>
+              <tr>
+                <td colspan="5">Итого:</td>
+                <td>750 руб.</td>
+              </tr>
+            </table>
+            <a href="#">Оформить заказ</a>  
           </section>
         </li>
        </ul>
@@ -193,12 +228,5 @@
           </a>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
         </p>
     </footer>
-     
-    <section>
-      <h2>Мы обязательно вам ответим!</h2>
-      <!--Форма обратной связи-->
-      <button type="button">Закрыть</button>
-    </section>
-  
   </body>
 </html>
