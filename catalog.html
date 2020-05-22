@@ -26,10 +26,10 @@
       <ul>
         <li><a href="#">Поиск по каталогу</a>
             <section>
-              <h2 class="visually-hidden">Поиск</h2>
-              <form action="https://echo.htmlacademy.ru" method="get">
-                <label for="search-field">Поиск</label>
-                <input id="search-field" type="search" name="search" placeholder="Что ищем?">
+              <h2 class="visually-hidden"> Поиск</h2>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="search-field">Поиск</label>
+                <input id="search-field" type="search" name="search" placeholder="Крем-брюле">
               </form>
             </section>
         </li>
@@ -39,12 +39,12 @@
               <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label for="email-login-field">Электронная почта</label>
-                  <input id="email-login-field" type="email" name="email" placeholder="Электронная почта">
+                  <input id="email-login-field" type="email" name="email" placeholder="email@example.com">
                 </p>
                 <p>
                   <label for="password-field">Пароль</label>
-                  <input id="password-field" type="password" name="password" placeholder="Пароль">
-              </p>
+                  <input id="password-field" type="password" name="password" placeholder="******">
+                </p>
               <p>
                 <button type="submit">Войти</button>
               </p>
