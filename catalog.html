@@ -2,39 +2,46 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси. Каталог сливочного мороженого</title>
+    <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="main-header">
+      <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип «GllacyShop»">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li>
-          <a href="catalog.html">Каталог</a>
-            <ul>
-              <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
+          <a class="current-navigation" href="catalog.html">Каталог</a>
+            <ul class="categories">
+              <li class="new-product"><a href="#">Новинки</a></li>
+              <li class="current-categories"><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
         </li>
-        <li><a href="blank.html">Доставка и оплата</a></li>
-        <li><a href="blank.html">О компании</a></li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
       </ul>
-      <ul>
-        <li><a href="#">Поиск по каталогу</a>
-            <section>
+      <div class="user-navigation">
+        <div class="users-item search-item">
+          <a href="#"><span class="visually-hidden">Поиск по каталогу</span></a>
+          <section class="display-none">
               <h2 class="visually-hidden"> Поиск</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <label class="visually-hidden" for="search-field">Поиск</label>
                 <input id="search-field" type="search" name="search" placeholder="Крем-брюле">
               </form>
             </section>
-        </li>
-        <li><a href="#">Вход</a>
-            <section>
+        </div>
+        <div class="users-item login-item">
+          <a href="#">Вход</a>
+        </div>
+            <section class="display-none">
               <h2 class="visually-hidden">Авторизация</h2>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
@@ -46,20 +53,20 @@
                   <input id="password-field" type="password" name="password" placeholder="******">
                 </p>
               <p>
-                <button type="submit">Войти</button>
+                <button class="button-click" type="submit">Войти</button>
               </p>
               </form>
               <p><a href="#">Забыли пароль?</a></p>
               <p><a href="#">Новая регистрация</a></p>
-            </section>
-          </li>
-          <li>
+          </section>
+          <div class="users-item cart-item">
             <a href="#">Корзина</a>
-          <section>        
+          </div>
+          <section class="display-none">        
             <h2 class="visually-hidden">Корзина</h2>
             <table>
               <tr>
-                <td><a href="3">Удалить</a></td>
+                <td><a href="#"><span class="visually-hidden">Удалить</span></a></td>
                 <td><a href="#"><img src="img/icecream-1-small.jpg" width="33" height="33" alt=""></a></td>
                 <td><a href="#">Пломбир с апельсиновым джемом</a></td>
                 <td>1,5 кг х</td>
@@ -67,7 +74,7 @@
                 <td>300 руб.</td>
               </tr>
               <tr>
-                <td><a href="3">Удалить</a></td>
+                <td><a href="#"><span class="visually-hidden">Удалить</span></a></td>
                 <td><img src="img/icecream-3-small.jpg" width="33" height="33" alt=""></td>
                 <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
                 <td>1,5 кг х</td>
@@ -79,18 +86,18 @@
                 <td>750 руб.</td>
               </tr>
             </table>
-            <a href="#">Оформить заказ</a>  
+            <a class="button-click" href="#">Оформить заказ</a>  
           </section>
-        </li>
-       </ul>
-      <div>
+      </div>
+    </nav>  
+      <div class="call">
         <p>с 10 до 20, ежедневно</p>
         <a href="tel:+78124502525">8 812 450-25-25</a>
       </div>
-    </header>
+  </header>
     <main>
-        <h1>Сливочное мороженое</h1>
-        <ul>
+        <h1 class="page-title">Сливочное мороженое</h1>
+        <ul class="bread-crumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a>Сливочное</a></li>
@@ -162,16 +169,17 @@
             <button type="sumbit">Применить</button>
             </form>
         </section>
-        <section>
+        <section class="creamy-icecream">
           <h2 class="visually-hidden">Список сливочного мороженого</h2>
-          <ul>
+          <ul class="creamy-icecream-list">
             <li>
                 <a href="#">
                     <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                     <img src="img/icecream-1.jpg" width="267" height="267" alt="Фото мороженого-1">
-                </a>
+                </article>
                 <p>310 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
+              
             </li>
             <li>
                 <a href="#">
@@ -179,7 +187,7 @@
                     <img src="img/icecream-2.jpg" width="267" height="267" alt="Фото мороженого-2">
                 </a>
                 <p>380 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -187,7 +195,7 @@
                     <img src="img/icecream-3.jpg" width="267" height="267" alt="Фото мороженого-3">
                 </a>
                 <p>355 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -195,7 +203,7 @@
                     <img src="img/icecream-4.jpg" width="267" height="267" alt="Фото мороженого-4">
                 </a>
                 <p>415 ₽<span>/кг</span></p>
-                <a href="">Быстрый просмотр</a>
+                <a class="button-click" href="">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -203,7 +211,7 @@
                     <img src="img/icecream-5.jpg" width="267" height="267" alt="Фото мороженого-5">
                 </a>
                 <p>325 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -211,7 +219,7 @@
                     <img src="img/icecream-6.jpg" width="267" height="267" alt="Фото мороженого-6">
                 </a>
                 <p>410 ₽<span>/кг</span></p>
-                <a href="">Быстрый просмотр</a>
+                <a class="button-click" href="">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -219,7 +227,7 @@
                     <img src="img/icecream-7.jpg" width="267" height="267" alt="Фото мороженого-7">
                 </a>
                 <p>315 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -227,7 +235,7 @@
                     <img src="img/icecream-8.jpg" width="267" height="267" alt="Фото мороженого-8">
                 </a>
                 <p>320 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -235,7 +243,7 @@
                     <img src="img/icecream-9.jpg" width="267" height="267" alt="Фото мороженого-9">
                 </a>
                 <p>440 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -243,7 +251,7 @@
                     <img src="img/icecream-10.jpg" width="267" height="267" alt="Фото мороженого-10">
                 </a>
                 <p>435 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -251,7 +259,7 @@
                     <img src="img/icecream-11.jpg" width="267" height="267" alt="Фото мороженого-11">
                 </a>
                 <p>355 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
             <li>
                 <a href="#">
@@ -259,7 +267,7 @@
                     <img src="img/icecream-12.jpg" width="267" height="267" alt="Фото мороженого-12">
                 </a>
                 <p>320 ₽<span>/кг</span></p>
-                <a href="#">Быстрый просмотр</a>
+                <a class="button-click" href="#">Быстрый просмотр</a>
             </li>
         </ul>
         <ul>
@@ -272,30 +280,31 @@
           <li><button type="button">&gt;</button></li>
           </ul>
     </main>
-    <footer>
-        <section>
-          <h2 class="visually-hidden">Наши социальные сети</h2>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Vkontakte</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
-        </section>
-        <section>
-          <h2 class="visually-hidden">О компании</h2>
-          <ul>
-            <li><a href="#">Для поставщиков</a></li>
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">О производстве</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
-          </ul>
-        </section>
-        <p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип «HTMLAcademy»">
-          </a>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
-        </p>
-    </footer>
+    <footer class="main-footer">
+      <section class="social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <ul class="social-list">
+          <li class="social-link social-facebook"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li class="social-link social-vk"><a href="#"><span class="visually-hidden">Vkontakte</span></a></li>
+          <li class="social-link social-instagram"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li class="social-link social-twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
+      </section>
+      <section class="documents">
+        <h2 class="visually-hidden">О компании</h2>
+        <ul class="documents-list">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </section>
+      <p>
+        <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"> 
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTMLAcademy">
+        </a>
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+      </p>
+  </footer>
   </body>
 </html>
