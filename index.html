@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
+      <div class="container">
         <nav class="main-navigation">
-        <a href="index.html">
+        <a class="main-logo red" href="index.html">
           <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип «GllacyShop»">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation red">
           <li>
             <a href="catalog.html">Каталог</a>
-              <ul class="categories">
+              <ul class="categories display-none">
                 <li class="new-product"><a href="#">Новинки</a></li>
                 <li><a href="catalog.html">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
@@ -27,7 +28,7 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <div class="user-navigation">
+        <div class="user-navigation red">
           <div class="users-item search-item">
             <a href="#"><span class="visually-hidden">Поиск по каталогу</span></a>
             <section class="display-none">
@@ -89,31 +90,33 @@
               <a class="button-click" href="#">Оформить заказ</a>  
             </section>
         </div>
-      </nav>  
-        <div class="call">
+      </nav>
+        <div class="call red">
           <p>с 10 до 20, ежедневно</p>
           <a href="tel:+78124502525">8 812 450-25-25</a>
         </div>
+      
+    </div> 
     </header>
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Магазин мороженого «GllacyShop»</h1>
-      <section>
+      <section class="slider">
         <h2>Слайдер</h2>
-        <ul>
-          <li>
+        <ul class="slider-list">
+          <li >
             <h3>Пломбир с помадкой и клубничный щербет</h3>
             <img src="img/slider-offer-1.png" width="647" height="584" alt="Мороженое на слайдере-1">
-            <a href="#">Давайте оба!</a>
+            <a class="button-click" href="#">Давайте оба!</a>
           </li>
           <li>
             <h3>Шоколадный пломбир и лимонный сорбет</h3>
             <img src="img/slider-offer-2.png" width="647" height="584" alt="Мороженое на слайдере-2">
-            <a href="#">Давайте оба!</a>
+            <a class="button-click" href="#">Давайте оба!</a>
           </li>
           <li>
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-            <img src="img/slider-offer-3.png" width="647" height="584" alt="Мороженое на слайдере-2">
-            <a href="#">Давайте оба!</a>
+            <img src="img/slider-offer-3.png" width="647" height="584" alt="Мороженое на слайдере-2"><br>
+            <a class="button-click" href="#">Давайте оба!</a>
           </li>
         </ul>
         <div>
@@ -137,47 +140,39 @@
           <a href="#">Хочу Шоколадки!</a>
         </div>
       </section>
-      <section  class="hit">
+      <section  class="creamy-icecream">
         <h2 class="visually-hidden">Хиты продаж</h2>
-        <ul>
-          <li>
-            <a href="#">
-                <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                <img src="img/icecream-1.jpg" width="267" height="267" alt="Фото мороженого-1">
-            </a>
-            <p>310 ₽<span>/кг</span></p>
-            <a href="#">Быстрый просмотр</a>
-        </li>
-        <li>
-            <a href="#">
-                <h3>Сливочно-кофейное с кусочками шоколада</h3>
-                <img src="img/icecream-2.jpg" width="267" height="267" alt="Фото мороженого-2">
-            </a>
-            <p>380 ₽<span>/кг</span></p>
-            <a href="#">Быстрый просмотр</a>
-        </li>
-        <li>
-            <a href="#">
-                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                <img src="img/icecream-3.jpg" width="267" height="267" alt="Фото мороженого-3">
-            </a>
-            <p>355 ₽<span>/кг</span></p>
-            <a href="#">Быстрый просмотр</a>
-        </li>
-        <li>
-            <a href="#">
-                <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-                <img src="img/icecream-4.jpg" width="267" height="267" alt="Фото мороженого-4">
-            </a>
-            <p>415 ₽<span>/кг</span></p>
-            <a href="#">Быстрый просмотр</a>
-        </li>
+        <ul class="creamy-icecream-list">
+          <li class="hit">
+              <a href="#">
+                  <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                  <img src="img/icecream-1.jpg" width="267" height="267" alt="Фото мороженого-1">
+                  </a>
+              <p>310 ₽<span>/кг</span></p>
+              <a class="button-click" href="#">Быстрый просмотр</a>
+          </li>
+          <li class="hit">
+              <a href="#">
+                  <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                  <img src="img/icecream-2.jpg" width="267" height="267" alt="Фото мороженого-2">
+              </a>
+              <p>380 ₽<span>/кг</span></p>
+              <a class="button-click" href="#">Быстрый просмотр</a>
+          </li>
+          <li class="hit">
+              <a href="#">
+                  <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                  <img src="img/icecream-3.jpg" width="267" height="267" alt="Фото мороженого-3">
+              </a>
+              <p>355 ₽<span>/кг</span></p>
+              <a class="button-click" href="#">Быстрый просмотр</a>
+          </li>
         </ul>
       </section>
       <section class="features">
         <h2 class="visually-hidden">О нас</h2>
         <p class="features-title">Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
-        <ul>
+        <ul class="features-list">
           <li>
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
           </li>
@@ -208,7 +203,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div>
+        <div class="adress">
           <h3 class="visually-hidden">Наш адрес</h3>
           <p>
             Адрес главного офиса и офлайн-магазина:<br>
@@ -220,8 +215,8 @@
             <a href="tel:+78124502525">8 812 450-25-25</a><br>
             (С 10 до 20 ужедневно)
           </p>
-          <a href="#">Форма обратной связи</a>
-          <section>
+          <a class="button-click" href="#">Форма обратной связи</a>
+          <section class="display-none">
             <h3 class="visually-hidden">Форма обратной cвязи</h3>
               <form action="https://echo.htmlacademy.ru" method="post">
                 <p>Мы обязательно вам ответим!</p>
