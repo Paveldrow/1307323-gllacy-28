@@ -102,7 +102,7 @@
 
     </div>
   </header>
-  <main>
+  <main class="container">
     <h1 class="page-title">Сливочное мороженое</h1>
     <ul class="bread-crumbs">
       <li><a class="link" href="index.html">Главная</a></li>
@@ -112,7 +112,7 @@
     <section class="filter">
       <h2 class="visually-hidden">Фильтр мороженного</h2>
       <form action="https://echo.htmlacademy.ru" method="get" oninput="maxpriceoutput.value=maxprice.value">
-        <p>
+        <div class="sorting-block">
           <label for="sorting-filter-field">Сортировка:</label>
           <select id="sorting-filter-field" name="sorting">
             <option value="filter-popular" selected>по популярности</option>
@@ -120,16 +120,18 @@
             <option value="filter-hight-price">сначала дорогие</option>
             <option value="filter-fat">по жирности</option>
           </select>
-        </p>
-        <p>
+        </div>
+        <div class="price-block">
           <label for="price-field">Цена:</label>
           <output name="minpriceoutput">100</output>
           <output name="maxpriceoutput">500</output><br>
           <input name="minprice" type="range" min="5" max="400" step="10">
           <input id="price-field" name="maxprice" type="range" min="500" max="1000" step="100">
-        </p>
-        <div>
+        </div>
+        <div class="fats-block">
+          <p>
           Жирность:
+        </p>
           <ul class="fat-level-list">
             <li class="filter-radio">
               <input type="radio" id="filter-fat-level-0%" name="fat-level" value="0%">
@@ -149,8 +151,10 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="topping">
+          <p>
           Наполнители:
+        </p>
           <ul class="topping-list">
             <li>
               <input type="checkbox" id="filter-topping-chocolate" name="topping-chocolate" checked>
@@ -278,7 +282,7 @@
       </ul>
       <ul class="pagination-list">
         <li><button type=button disabled> &lt;</button></li>
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li><a class="pagination-item pagination-item-current">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
@@ -291,24 +295,27 @@
     <div class="container">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <ul class="social-list">
-        <li class="social-link social-facebook"><a href="#"><span>Facebook</span></a></li>
-        <li class="social-link social-vk"><a href="#"><span>Vkontakte</span></a></li>
-        <li class="social-link social-instagram"><a href="#"><span>Instagram</span></a></li>
-        <li class="social-link social-twitter"><a href="#"><span>Twitter</span></a></li>
+        <li class="social-link social-facebook"><a href="#">
+            <span class="visually-hidden">Facebook</span></a></li>
+        <li class="social-link social-vk"><a href="#"><span class="visually-hidden">Vkontakte</span></a></li>
+        <li class="social-link social-instagram"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li class="social-link social-twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
       </ul>
       <h2 class="visually-hidden">О компании</h2>
       <ul class="documents-list">
-        <li><a class="main-document link" href="#">Для поставщиков</a></li>
-        <li><a class="link" href="#">Наши документы</a></li>
-        <li><a class="link" href="#">О производстве</a></li>
-        <li><a class="link" href="#">Экологические стандарты</a></li>
+        <li class="documents-item main-item"><a class="main-document link" href="#">Для поставщиков</a></li>
+        <li class="documents-item"><a class="link" href="#">Наши документы</a></li>
+        <li class="documents-item"><a class="link" href="#">О производстве</a></li>
+        <li class="documents-item"><a class="link" href="#">Экологические стандарты</a></li>
       </ul>
-      <p>
+      <div class="develop">
         <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTMLAcademy">
         </a>
-        Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
-      </p>
+        <p>
+          Сделано в <a class="link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+        </p>
+      </div>
     </div>
   </footer>
 </body>
