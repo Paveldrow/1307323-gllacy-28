@@ -18,54 +18,58 @@
       </a>
       <ul class="site-navigation">
         <li class="site-navigation-item catalog-menu">
-        <a class="link catalog-menu" href="catalog.html">Каталог</a>
-        <ul class="catalog-list">
-          <li class="new-product"><a href="#">Новинки</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="catalog.html">Сливочное</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
-          
-        </ul>
-      </li>
-        <li class="site-navigation-item"><a  class="link" href="#">Доставка и оплата</a></li>
-        <li class="site-navigation-item"><a  class="link" href="#">О компании</a></li>
+          <a class="link catalog-menu" href="catalog.html">Каталог</a>
+          <ul class="catalog-list">
+            <li class="new-product"><a href="#">Новинки</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+
+          </ul>
+        </li>
+        <li class="site-navigation-item"><a class="link" href="#">Доставка и оплата</a></li>
+        <li class="site-navigation-item"><a class="link" href="#">О компании</a></li>
       </ul>
 
       <div class="user-navigation">
         <div class="user-item search-item">
-          <a href="#"><span class="visually-hidden">Поиск по каталогу</span></a>
-          <section class="display-none">
-            <h2> Поиск</h2>
+          <a class="search-link" href="#"><span class="visually-hidden">Поиск по каталогу</span></a>
+          <section class="search-block">
+            <h2 class="visually-hidden"> Поиск</h2>
             <form action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="search-field">Поиск</label>
               <input id="search-field" type="search" name="search" placeholder="Крем-брюле">
-              <button type="submit">Поиск</button>
+              <button class="visually-hidden" type="submit">Поиск</button>
             </form>
           </section>
         </div>
         <div class="user-item login-item">
-          <a href="#">Вход</a>
+          <a class="login-link" href="#">Вход</a>
+
+          <section class="login-block">
+            <h2 class="visually-hidden">Авторизация</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="email-login-field">Электронная почта</label>
+                <input id="email-login-field" type="email" name="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label class="visually-hidden" for="password-field">Пароль</label>
+                <input id="password-field" type="password" name="password" placeholder="******">
+              </p>
+              <div class="login-control">
+                <button class="button login-button" type="submit">Войти</button>
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </div>
+            </form>
+
+          </section>
         </div>
-        <section class="display-none">
-          <h2 class="visually-hidden">Авторизация</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="email-login-field">Электронная почта</label>
-              <input id="email-login-field" type="email" name="email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="password-field">Пароль</label>
-              <input id="password-field" type="password" name="password" placeholder="******">
-            </p>
-            <p>
-              <button class="button-click" type="submit">Войти</button>
-            </p>
-          </form>
-          <p><a href="#">Забыли пароль?</a></p>
-          <p><a href="#">Новая регистрация</a></p>
-        </section>
-        <div class="user-item cart-full">
+        <div class="user-item gitcart-full">
           <a href="#">2 товара</a>
         </div>
         <section class="display-none">
@@ -131,8 +135,8 @@
         </div>
         <div class="fats-block">
           <p>
-          Жирность:
-        </p>
+            Жирность:
+          </p>
           <ul class="fat-level-list">
             <li class="filter-radio">
               <input type="radio" id="filter-fat-level-0%" name="fat-level" value="0%">
@@ -154,8 +158,8 @@
         </div>
         <div class="topping">
           <p>
-          Наполнители:
-        </p>
+            Наполнители:
+          </p>
           <ul class="topping-list">
             <li>
               <input type="checkbox" id="filter-topping-chocolate" name="topping-chocolate" checked>
@@ -190,7 +194,7 @@
             <img src="img/icecream-1.jpg" width="267" height="267" alt="Фото мороженого-1">
           </a>
           <p>310 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -198,7 +202,7 @@
             <img src="img/icecream-2.jpg" width="267" height="267" alt="Фото мороженого-2">
           </a>
           <p>380 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -206,7 +210,7 @@
             <img src="img/icecream-3.jpg" width="267" height="267" alt="Фото мороженого-3">
           </a>
           <p>355 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -214,7 +218,7 @@
             <img src="img/icecream-4.jpg" width="267" height="267" alt="Фото мороженого-4">
           </a>
           <p>415 ₽<span>/кг</span></p>
-          <a class="button" href="">Быстрый просмотр</a>
+          <a class="button icecream-button" href="">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -222,7 +226,7 @@
             <img src="img/icecream-5.jpg" width="267" height="267" alt="Фото мороженого-5">
           </a>
           <p>325 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -230,7 +234,7 @@
             <img src="img/icecream-6.jpg" width="267" height="267" alt="Фото мороженого-6">
           </a>
           <p>410 ₽<span>/кг</span></p>
-          <a class="button" href="">Быстрый просмотр</a>
+          <a class="button icecream-button" href="">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -238,7 +242,7 @@
             <img src="img/icecream-7.jpg" width="267" height="267" alt="Фото мороженого-7">
           </a>
           <p>315 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -246,7 +250,7 @@
             <img src="img/icecream-8.jpg" width="267" height="267" alt="Фото мороженого-8">
           </a>
           <p>320 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -254,7 +258,7 @@
             <img src="img/icecream-9.jpg" width="267" height="267" alt="Фото мороженого-9">
           </a>
           <p>440 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -262,7 +266,7 @@
             <img src="img/icecream-10.jpg" width="267" height="267" alt="Фото мороженого-10">
           </a>
           <p>435 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -270,7 +274,7 @@
             <img src="img/icecream-11.jpg" width="267" height="267" alt="Фото мороженого-11">
           </a>
           <p>355 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
         <li class="creamy-icecream-item">
           <a href="#">
@@ -278,17 +282,19 @@
             <img src="img/icecream-12.jpg" width="267" height="267" alt="Фото мороженого-12">
           </a>
           <p>320 ₽<span>/кг</span></p>
-          <a class="button" href="#">Быстрый просмотр</a>
+          <a class="button icecream-button" href="#">Быстрый просмотр</a>
         </li>
       </ul>
+    </section>
+    <section class="pagination-block">
       <ul class="pagination-list">
-        <li><button type=button disabled> &lt;</button></li>
+        <li><a disabled><</button></li>
         <li><a class="pagination-item pagination-item-current">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
         <li class="pagination-item"><a href="#">5</a></li>
-        <li><button type="button">&gt;</button></li>
+        <li><a href="#">></button></li>
       </ul>
     </section>
   </main>
@@ -296,11 +302,16 @@
     <div class="container">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <ul class="social-list">
-        <li class="social-link social-facebook"><a href="#">
-            <span class="visually-hidden">Facebook</span></a></li>
-        <li class="social-link social-vk"><a href="#"><span class="visually-hidden">Vkontakte</span></a></li>
-        <li class="social-link social-instagram"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
-        <li class="social-link social-twitter"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li class="social-link">
+          <a class="social-facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-link"><a class="social-vk" href="#"><span class="visually-hidden">Vkontakte</span></a></li>
+        <li class="social-link"><a class=" social-instagram" href="#"><span
+              class="visually-hidden">Instagram</span></a></li>
+        <li class="social-link"><a class=" social-twitter" href="#"><span class="visually-hidden">Twitter</span></a>
+        </li>
       </ul>
       <h2 class="visually-hidden">О компании</h2>
       <ul class="documents-list">
