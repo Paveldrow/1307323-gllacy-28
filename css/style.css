@@ -37,7 +37,7 @@ body {
   line-height     : 22px;
   font-weight     : 400;
   color           : var(--basic-white);
-  background-color: var(--basic-slide-1);
+  background-color: var(--basic-slide-3);
 }
 
 .site-wrapper {
@@ -507,6 +507,10 @@ padding-top: 18px;
   padding: 13px;
   margin-left: auto;
   margin-right: 0;
+}
+
+.cart-block .button:hover {
+color: var(--basic-white);
 }
 
 .cart-full:hover .cart-block {
@@ -1454,6 +1458,7 @@ background-image: url(../img/checkbox-on.svg);
   align-items    : center;
   min-width  : 1146px;
    padding-top: 18px;
+   padding-bottom: 26px;
 }
 
 .main-footer a {
