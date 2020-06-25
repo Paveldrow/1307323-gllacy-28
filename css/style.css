@@ -1227,7 +1227,7 @@ appearance: none;
   background-image: url(../img/icon-down-select-hover.svg);
   color: var(--basic-black);
   font-weight: 500;
-}gia add
+}
 
 .filter-block li:not(:last-child){
   margin-right: 19px;
