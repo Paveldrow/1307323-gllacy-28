@@ -76,6 +76,7 @@
             <section class="cart-block">
               <h2 class="visually-hidden">Корзина</h2>
               <table class="cart-table">
+                <caption class="final-price">Итого: 750 руб.</caption>
                 <tr>
                   <td class="td-dell"><a class="delet-item" href="#"><span class="visually-hidden">Удалить</span></a></td>
                   <td><a href="#"><img src="img/icecream-1-small.jpg" width="33" height="33" alt=""></a></td>
@@ -90,7 +91,7 @@
                   <td class="td-price-item">1,5 кг х 200 руб.</td>
                   <td class="td-full-price">300 руб.</td>
                 </tr>
-                <caption class="final-price">Итого: 750 руб.</caption>
+                
               </table>
               <a class="button" href="#">Оформить заказ</a>
             </section>
@@ -126,11 +127,11 @@
               <a class="button button-slider visually-hidden" href="#">Давайте оба!</a>
             </li>
           </ul>
-          <ul class="slider-buttons-list">
-            <li><button type="button">Слайд 1</button></li>
-            <li><button type="button">Слайд 2</button></li>
-            <li><button type="button">Слайд 3</button></li>
-          </ul>
+          <div class="slider-controls">
+            <button type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button class="current" type="button" aria-label="Третий слайд"></button>
+          </div>
 
         </section>
         <section class="promo-columns">
@@ -153,36 +154,44 @@
           <h2 class="visually-hidden">Хиты продаж</h2>
           <ul class="creamy-icecream-list">
             <li class="creamy-icecream-item icecream-hit">
-              <a href="#">
+              <div class="icecream-item-container">
+              <a class="item-preview" href="#">
                 <h3 class="link">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 <img src="img/icecream-1.jpg" width="267" height="267" alt="Фото мороженого-1">
               </a>
               <p>310 ₽<span>/кг</span></p>
               <a class="button icecream-button" href="#">Быстрый просмотр</a>
+            </div>
             </li>
             <li class="creamy-icecream-item icecream-hit">
-              <a href="#">
+              <div class="icecream-item-container">
+              <a class="item-preview" href="#">
                 <h3 class="link">Сливочно-кофейное с кусочками шоколада</h3>
                 <img src="img/icecream-2.jpg" width="267" height="267" alt="Фото мороженого-2">
               </a>
               <p>380 ₽<span>/кг</span></p>
               <a class="button icecream-button" href="#">Быстрый просмотр</a>
+           </div>
             </li>
             <li class="creamy-icecream-item icecream-hit">
-              <a href="#">
+              <div class="icecream-item-container">
+              <a  class="item-preview" href="#">
                 <h3 class="link">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 <img src="img/icecream-3.jpg" width="267" height="267" alt="Фото мороженого-3">
               </a>
               <p>355 ₽<span>/кг</span></p>
               <a class="button icecream-button" href="#">Быстрый просмотр</a>
+            </div>
             </li>
             <li class="creamy-icecream-item icecream-hit">
-              <a href="#">
+              <div class="icecream-item-container">
+              <a class="item-preview" href="#">
                 <h3 class="link">Сливочное крем-брюле с карамельной подливкой</h3>
                 <img src="img/icecream-4.jpg" width="267" height="267" alt="Фото мороженого-4">
               </a>
               <p>415 ₽<span>/кг</span></p>
               <a class="button icecream-button" href="#">Быстрый просмотр</a>
+            </div>
             </li>
           </ul>
         </section>
@@ -264,7 +273,7 @@
                   <button class="button" type="submit">Отправить</button>
           
               </form>
-              <a class="button-close" href="#"><span class="visually-hidden">Закрыть</span></button>
+              <a class="button-close" href="#"><span class="visually-hidden">Закрыть</span></a>
             </section>
           </div>
         </div>
