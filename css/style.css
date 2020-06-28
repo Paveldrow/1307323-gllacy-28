@@ -26,6 +26,7 @@
   --basic-table-border: #CACAC7;
   --basic-rage-scale: rgba(248, 247, 244, 0.5);
   --basic-toggle: #ABABAB;
+  --basic-feedback-display: rgba(0, 0, 0, 0.3)
 }
 
 body {
@@ -1171,12 +1172,22 @@ padding-bottom: 62px;
   padding-top: 8px;
 }
 
-.feedback-block {
+.feedback-display {
   display: none;
   position: absolute;
+  background-color: var(--basic-feedback-display);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: auto;
+}
+
+.feedback-block {
+  position: relative;
   width: 429px;
-  top: 338px;
- left: 367px;
+  margin: auto;
+  margin-top: 338px;
   color: var(--basic-black);
   background-color: var(--basic-subscription-background);
   padding-top: 15px;
