@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Глейси. Каталог сливочного мороженого</title>
+  <title>Gllacy</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
@@ -118,8 +118,8 @@
         <h2 class="visually-hidden">Фильтр мороженного</h2>
         <form class="sorting-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="filter-block sorting-block">
-            <label for="sorting-filter-field">
-              <p class="filter-title">Сортировка:</p>
+            <label class="filter-title" for="sorting-filter-field">
+              Сортировка:
             </label>
             <select id="sorting-filter-field" name="sorting">
               <option value="filter-popular" selected>по популярности</option>
@@ -135,8 +135,10 @@
             <div class="rage-controls">
               <div class="scale">
                 <div class="bar"></div>
-                <div class="toggle toggle-min" tabe-index="0"></div>
-                <div class="toggle toggle-max" tabe-index="0"></div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                left: 20%"></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                left: 50%"></div>
 
               </div>
             </div>
@@ -147,7 +149,7 @@
             </p>
             <ul class="background-form fat-level-list">
               <li class="filter-radio">
-                <input class="radio-input visually-hidden" type="radio" id="filter-fat-level-0%" name="fat-level" value="0%" checked><span class="radio-check"></span>
+                <input class="radio-input visually-hidden" type="radio" id="filter-fat-level-0%" name="fat-level" value="0%"><span class="radio-check"></span>
                 <label for="filter-fat-level-0%">0%</label>
               </li>
               <li class="filter-radio">
@@ -318,18 +320,19 @@
           </li>
         </ul>
       </section>
-      <section class="pagination-block">
+      <div class="pagination-block">
+
         <ul class="pagination-list">
-          <li><a class="pagination-back" disabled><span class="visually-hidden">Назад</span></a>
+          <li><a class="pagination-back disabled"><span class="visually-hidden">Назад</span></a>
           </li>
           <li><a class="pagination-item pagination-item-current">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
-          <li class="pagination-item"><a href="#">5</a></li>
+          <li><a class="pagination-item" href="#">2</a></li>
+          <li><a class="pagination-item" href="#">3</a></li>
+          <li><a class="pagination-item" href="#">4</a></li>
+          <li><a class="pagination-item" href="#">5</a></li>
           <li><a class="pagination-next" href="#"><span class="visually-hidden">Вперед</span></a></li>
         </ul>
-      </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="container">

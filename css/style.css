@@ -32,7 +32,7 @@ body {
   min-width       : 1166px;
   margin          : 0;
   padding         : 0;
-  font-family     : 'Roboto', Arial, sans-serif;
+  font-family     : "Roboto", "Arial", sans-serif;
   font-size       : 16px;
   line-height     : 22px;
   font-weight     : 400;
@@ -70,6 +70,10 @@ img {
 }
 
 .display-none {
+  display: none;
+}
+
+.slider-list .display-none {
   display: none;
 }
 
@@ -170,7 +174,9 @@ padding-top: 15px;
 .search-link:hover,
 .search-link:focus,
 .login-link:hover, 
-.login-link:focus {
+.login-link:focus, 
+.cart-link:hover,
+.cart-link:focus {
   color           : var(--basic-black);
   background-color: var(--basic-white);
   border          : none;
@@ -272,7 +278,7 @@ padding-top: 15px;
 .user-navigation {
   display        : flex;
   justify-content: flex-end;
-  /*min-width      : 266px;*/
+
   margin-left    : auto;
  padding-top: 2px;
 
@@ -289,7 +295,7 @@ padding-top: 15px;
   border-radius      : 20px;
   font-size          : 14px;
   line-height        : 16px;
-  font-weight: 400;
+  font-weight: 500;
   background-color   : var(--basic-light-white-background);
   background-position: 16px center;
   background-repeat  : no-repeat;
@@ -696,6 +702,7 @@ color: var(--basic-white);
 
 
 .slider-item h3 {
+  
   width: 672px;
   margin     : 0;
   font-size  : 60px;
@@ -1499,8 +1506,19 @@ line-height: 16px;
   background-image: url(../img/radio-on.svg);
 }
 
+.radio-input:disabled + .radio-check,
+.radio-input:checked:disabled + .radio-check {
+  opacity: 0.4;
+}
+
+
 .check-input:checked + .check-box-check {
 background-image: url(../img/checkbox-on.svg);
+}
+
+.check-input:disabled + .check-box-check,
+.check-input:checked:disabled + .check-box-check {
+  opacity: 0.4;
 }
 
 .radio-input:hover + .radio-check,
@@ -1567,19 +1585,22 @@ background-image: url(../img/checkbox-on.svg);
 
 
 
-.pagination-item a {
+.pagination-item {
+  font-size: 16px;
+line-height: 18px;
+font-weight: 500;
   color  : var(--basic-white);
   padding: 10px;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item:hover,
+.pagination-item:focus {
   background-image   : url("../img/pagination-hover.svg");
   background-repeat  : no-repeat;
   background-position: center;
 }
 
-.pagination-item a:active {
+.pagination-item:active {
   color           : var(--basic-black);
   background-image: url("../img/pagination-current.svg");
 }
