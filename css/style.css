@@ -152,6 +152,7 @@ padding-top: 15px;
 
 .site-navigation a {
   display: inline-block;
+  vertical-align: top;
   padding-top   : 6px;
   padding-right : 14px;
   padding-bottom: 7px;
@@ -288,6 +289,7 @@ padding-top: 15px;
 
 .user-item > a {
   display: inline-block;
+  vertical-align: top;
   padding-top        : 8px;
   padding-right      : 16px;
   padding-bottom     : 8px;
@@ -547,6 +549,7 @@ line-height: 16px;
 
 .td-dell a{
   display: inline-block;
+  vertical-align: top;
 }
 
 .td-dell {
@@ -739,6 +742,7 @@ color: var(--basic-white);
 .slider-controls button:hover,
   .slider-controls button:focus{
     background-color: var(--basic-white);
+    opacity: 0.4;
 }
 .promo-columns {
   display              : grid;
@@ -844,6 +848,7 @@ padding-left: 21px;
 
 .icecream-item-container:hover .icecream-button {
   display: inline-block;
+  vertical-align: top;
   align-self: center;
   
  
@@ -1084,6 +1089,7 @@ line-height: 22px;
 
 .subscription-block .button {
   display: inline-block;
+  vertical-align: top;
 padding-top: 10px;
 padding-right: 19px;
 padding-left: 20px;
@@ -1113,6 +1119,7 @@ padding-bottom: 62px;
 
 .adress {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   width: 303px;
   background-color: var(--basic-adress-background);
@@ -1159,6 +1166,7 @@ padding-bottom: 62px;
 
 .adress a {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   margin-top   : 3px;
   align-self   : center;
@@ -1248,6 +1256,7 @@ line-height: 20px;
 
 .feedback-form .button {
   display: inline-block;
+  vertical-align: top;
 margin-left: 288px;
 padding-top: 10px;
 padding-right: 24px;
@@ -1403,6 +1412,8 @@ appearance: none;
   padding-left: 21px;
 }
 
+
+
 .scale {
   height: 2px;
   width: auto;
@@ -1430,6 +1441,8 @@ appearance: none;
   cursor: pointer;
 }
 
+
+
 .toggle-min {
   left: 34px;
 }
@@ -1438,18 +1451,19 @@ appearance: none;
   left: 132px;
 }
 
-.price-block input {
-  background-color: transparent;
-  border: none;
-  color: var(--basic-white);
-  width: 40px;
-  font-weight: 500;
-font-size: 14px;
-line-height: 16px;
+
+
+.toggle-min:hover {
+  top: 8px;
+  left: 33px;
+  border: 9px solid var(--basic-white);
 }
 
-
-
+.toggle-max:hover {
+  top: 8px;
+  left: 33px;
+  border: 9px solid var(--basic-white);
+}
 
 
 .fat-level-list,
