@@ -1053,6 +1053,12 @@ th {
   box-shadow: 0px 0px 0px 1px var(--basic-form-border);
 }
 
+.page-body textarea:focus,
+.page-body textarea:active {
+  outline   : none;
+  box-shadow: 0px 0px 0px 2px var(--basic-outline);
+}
+
 .page-body input:focus,
 .page-body input:active {
   outline   : none;
@@ -1163,7 +1169,6 @@ th {
   display         : none;
   position        : fixed;
   top             : 0;
-  left            : 0;
   width           : 100%;
   height          : 100%;
   z-index         : 90;
@@ -1172,7 +1177,7 @@ th {
 
 .modal-show {
   display  : block;
-  animation: bounce 0.6s;
+  
 }
 
 @keyframes bounce {
@@ -1216,10 +1221,6 @@ th {
   }
 }
 
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .feedback-block {
   position        : relative;
   width           : 429px;
@@ -1232,6 +1233,11 @@ th {
   padding-bottom  : 23px;
   padding-left    : 24px;
   border-radius   : 6px;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .feedback-form {
