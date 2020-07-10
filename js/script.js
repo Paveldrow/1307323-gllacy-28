@@ -21,6 +21,8 @@
  link.addEventListener("click", function (evt) {
      evt.preventDefault();
      popup.classList.add("modal-show");
+
+
  		if (storage) {
  			login.value = storage;
  			email.focus();
@@ -36,7 +38,7 @@
  });
 
  form.addEventListener("submit", function (evt) {
- 	if (!login.value || !email.value || !message.value) {
+ 	if (!login.value || !email.value || !feedback.value) {
      evt.preventDefault();
 	 popupmodal.classList.remove("modal-error");
 	 popupmodal.offsetWidth = popupmodal.offsetWidth;
